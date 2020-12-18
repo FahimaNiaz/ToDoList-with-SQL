@@ -44,7 +44,7 @@ def edit_tasks(values):
 
 
 if __name__ == '__main__':
-    window = sg.Window("Week1", layout)
+    window = sg.Window("To-Do List with SQL", layout)
 
 while True:
     event, values = window.Read()
@@ -56,24 +56,8 @@ while True:
         edit_tasks(values)
     if event == 'delete':
         delete_tasks(values)
-        '''
-    elif event == 'Save':    
-        save_tasks(values)'''
+      
 window.Close()
 
 
 
-
-
-
-
-
-
-
-"""
-
- task = values['taskname']
-    todolist.append(task)
-    window.FindElement('taskname').Update(value="")
-    window.FindElement('todolist').Update(tasklist)
-    window.FindElement('add_save').Update('Add')"""
